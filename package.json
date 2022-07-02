@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hingjae/nodeJS-workspace.git"
+  },
+  "author": "hingjae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hingjae/nodeJS-workspace/issues"
+  },
+  "homepage": "https://github.com/hingjae/nodeJS-workspace#readme"
+}
