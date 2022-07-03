@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/server.js",
     "day2": "nodemon --exec babel-node src/day2.js",
-    "about_middleware": "nodemon --exec babel-node src/about_middleware.js"
+    "about_middleware": "nodemon --exec babel-node src/about_middleware.js",
+    "day5": "nodemon --exec babel-node src/day5/day5.js"
   },
   "author": "hingjae",
   "license": "MIT",
