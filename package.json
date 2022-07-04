@@ -10,7 +10,8 @@
     "dev": "nodemon --exec babel-node src/server.js",
     "day2": "nodemon --exec babel-node src/day2.js",
     "about_middleware": "nodemon --exec babel-node src/about_middleware.js",
-    "day5": "nodemon --exec babel-node src/day5/day5.js"
+    "day5": "nodemon --exec babel-node src/day5/day5.js",
+    "day6": "nodemon --exec babel-node src/day6/index.js"
   },
   "author": "hingjae",
   "license": "MIT",
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/hingjae/nodeJS-workspace#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
