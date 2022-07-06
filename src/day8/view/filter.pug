@@ -1,0 +1,7 @@
+extends layout.pug
+include mixins/movie
+
+block content
+  each movie in movies
+    if movie.year >= year && movie.rating >= rating
+      +callMovie(movie)

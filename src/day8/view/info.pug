@@ -4,5 +4,10 @@ html(lang="ko")
     title movie
     link(rel="stylesheet", href="https://unpkg.com/mvp.css")
   body 
-    header 
+    main
       h1= title
+      h4= summary
+      h5 
+        each genre in genres 
+          li= genre
+      include partials/footer

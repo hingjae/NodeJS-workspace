@@ -1,0 +1,13 @@
+doctype html 
+html(lang="ko")
+  head 
+    title movie
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+  body 
+    h1= title
+    form(method="GET", action="./filter")
+      input(placeholder="Filter by year", type="number", name="year")
+      input(placeholder="Filter by rating", type="number", name="rating")
+      input(type="submit", value="Search")
+    block content
+    include partials/footer
