@@ -17,6 +17,8 @@ export const movieDetail = (req, res) => {
     title: movie.title,
     summary: movie.summary,
     genres: movie.genres,
+    year: movie.year,
+    rating: movie.rating,
   });
 };
 export const filterMovie = (req, res) => {
