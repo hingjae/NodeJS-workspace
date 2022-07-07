@@ -12,7 +12,8 @@
     "about_middleware": "nodemon --exec babel-node src/about_middleware.js",
     "day5": "nodemon --exec babel-node src/day5/day5.js",
     "day6": "nodemon --exec babel-node src/day6/index.js",
-    "day8": "nodemon --exec babel-node src/day8/index.js"
+    "day8": "nodemon --exec babel-node src/day8/index.js",
+    "day9": "nodemon --exec babel-node src/day9/index.js"
   },
   "author": "hingjae",
   "license": "MIT",
