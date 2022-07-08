@@ -13,7 +13,8 @@
     "day5": "nodemon --exec babel-node src/day5/day5.js",
     "day6": "nodemon --exec babel-node src/day6/index.js",
     "day8": "nodemon --exec babel-node src/day8/index.js",
-    "day9": "nodemon --exec babel-node src/day9/index.js"
+    "day9": "nodemon --exec babel-node src/day9/index.js",
+    "day10": "nodemon --exec babel-node src/day10/index.js"
   },
   "author": "hingjae",
   "license": "MIT",
@@ -24,6 +25,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "express": "^4.18.1",
+    "mongoose": "^6.4.4",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
