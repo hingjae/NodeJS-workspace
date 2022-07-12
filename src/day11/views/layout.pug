@@ -1,0 +1,24 @@
+doctype html 
+html(lang="ko")
+  haed 
+    title= siteTitle
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+  body 
+    header
+      h1= pageTitle
+      nav
+        ul
+          li 
+            a(href="/") Home
+          li
+            a(href="/upload") Upload Movie
+          li
+            a(href="/search") Search Movie
+          if movie
+            li 
+              a(href=`${movie.id}/edit`) Edit Movie
+            li
+              a(href=`${movie.id}/delete`) Delete Movie
+
+    main
+      block content

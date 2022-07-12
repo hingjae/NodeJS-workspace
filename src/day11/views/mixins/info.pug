@@ -1,0 +1,8 @@
+mixin info(movie)
+  div 
+    h1 #{ movie.title } (#{ movie.year })
+    p= movie.summary
+    h4 rating : #{ movie.rating }
+  ul 
+    each genre in movie.genres 
+      li= genre
