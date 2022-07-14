@@ -47,7 +47,7 @@ export const postEdit = async (req, res) => {
 };
 export const deleteMovie = async (req, res) => {
   const { id } = req.params;
-  await Movie.findByIdAndDelete(id);
+  await Movie.findByIdAndRemove(id);
   return res.redirect("/");
 };
 
