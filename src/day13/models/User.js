@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+import bcrypt from "bcrypt";
 /*
 PLEASE ADD YOUR USERNAME IN THIS LINE.
 ALL THE MODELS YOU WILL CREATE WILL HAVE YOUR USERNAME APPENDED TO THEM
@@ -10,7 +10,15 @@ WE NEED TO SHARE THE SAME DB SO NICO CAN CHECK OUT EVERYBODYS PROJECT.
 */
 const YOUR_USERNAME = "hingjae";
 
-const UserSchema = mongoose.Schema({});
+const UserSchema = mongoose.Schema({
+  name: { type: String, required: true },
+  username: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+});
+
+UserSchema.pre("save", async function () {
+  this.password = await bcrypt.hash(this.password, 5);
+});
 
 if (YOUR_USERNAME === null || typeof YOUR_USERNAME !== "string") {
   /*
